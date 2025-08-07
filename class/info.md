@@ -37,26 +37,25 @@ parameterized constructor
 
 #### member initializer list
 Using ':' after constructor signature
-Example
-    ClassName() : member1(...), member2(...), ...
+Example - ClassName() : member1(...), member2(...), ...
 
 Members can be objects themselves
 
 #### constructor calling forms
 
-Functional form initialization
-    ClassName obj(...)
-    ClasName ptr-var = new ClassName(...)
+##### Functional form initialization
+ClassName obj(...)
+ClasName ptr-var = new ClassName(...)
 
-Variable form  initialization
-    for single parameter constructors
-    ClassName obj = Val;
+##### Variable form  initialization
+for single parameter constructors
+ClassName obj = Val;
 
-Uniform initialization
-    same as functional form but instead of "()", "{}" are used
-    ClassName obj{...}  - this can include an optional =
-    ClassName obj = {...} - aka pod-like
-    ClasName ptr-var = new ClassName{...}
+##### Uniform initialization
+same as functional form but instead of "()", "{}" are used
+ClassName obj{...}  - this can include an optional =
+ClassName obj = {...} - aka pod-like
+ClasName ptr-var = new ClassName{...}
 
 ## destructor
 
