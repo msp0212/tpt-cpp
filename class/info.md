@@ -11,7 +11,7 @@ accessible only by the class members or from friends or members of derived class
 accessible anywhere where object of the class is visible
 
 
-# scope operators '::'
+# scope operator '::'
 
 Helps in defining member functions outside the class body
 
