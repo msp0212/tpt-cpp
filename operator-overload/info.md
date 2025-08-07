@@ -1,6 +1,6 @@
 # overloadable operators
 
-+ - * / % (unary also wherever applicable)
+\+ \- \* / % (unary also wherever applicable)
 
 = += -= *= /= 
 
