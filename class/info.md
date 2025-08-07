@@ -53,8 +53,11 @@ ClassName obj = Val;
 
 ##### Uniform initialization
 same as functional form but instead of "()", "{}" are used
+
 ClassName obj{...}  - this can include an optional =
+
 ClassName obj = {...} - aka pod-like
+
 ClasName ptr-var = new ClassName{...}
 
 ## destructor
