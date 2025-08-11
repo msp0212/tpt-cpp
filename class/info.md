@@ -76,3 +76,11 @@ They can also have their own member functions and member variables
 Classic properties of a struct and union are retained
 
 Only difference is default access of members if public
+
+
+# static members
+
+aka class variables, not per object, common to all objects
+
+
+

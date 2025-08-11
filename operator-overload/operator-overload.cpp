@@ -14,6 +14,15 @@ public:
 		return x == p.x && y == p.y;
 	}
 	
+	Point& operator=(const Point &p) {
+		std::cout << __func__ << " called\n";
+		if (this != &p) {
+			x = p.x;
+			y = p.y;
+		}
+		return *this;
+	}
+	
 	void display() {
 		std::cout << "(" << x << "," << y << ")\n";
 	}
@@ -34,6 +43,14 @@ void operatorOverloadDemo() {
 	p3 = p1 + p2;
 	p3.display();
 	std::cout << "p1 == p3: " << (p1 == p3) << "\n";
+
+	// direct intialisation, copy assignment operator not called
+	Point p4 = p3 + p2;
+	p4.display();
+
+	Point p5;
+	p5 = p4 + p2;
+	p5.display();
 }
 
 int main() {
